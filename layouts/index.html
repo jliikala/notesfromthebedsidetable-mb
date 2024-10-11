@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "bloglead.html" . }}
 <ul class="posts h-feed">
 
 {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "paginate" | default 10) }}
