@@ -14,3 +14,42 @@ body {
   padding: 24px;
   margin: 0 auto;
 }
+
+p, li {
+  margin-top: 8px;
+  line-height: 140%;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.blog-lead {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.blog-lead img {
+  width: 80px;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+  border-radius: 100%;
+}
+
+.blog-lead p {
+  margin-top: 2px;
+  color: rgba(255, 246, 239, 0.4);
+  font-size: 12px;
+}
+
+.upper {
+  font-family: "JetBrains Mono Regular", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0;
+}
