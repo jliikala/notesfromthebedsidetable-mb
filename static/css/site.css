@@ -25,7 +25,7 @@ p, li {
   margin-bottom: 6px;
 }
 
-.blog-lead {
+.blog-header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -33,7 +33,6 @@ p, li {
 
 .blog-lead img {
   width: 80px;
-  mix-blend-mode: multiply;
   filter: grayscale(100%);
   border-radius: 100%;
 }
