@@ -6,13 +6,47 @@ html {
   color: #eaeaea;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 body {
-  font-size: 1.09rem;
   width: 650px;
   padding: 24px;
   margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.25rem; /* 36px */
+}
+
+h2 {
+  font-size: 1.8rem; /* 28.8px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+}
+
+p {
+  font-size: 1rem; /* 16px */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px; /* Increase font size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px; /* Increase font size for desktops */
+  }
 }
 
 p, li {
@@ -52,7 +86,6 @@ p, li {
 .blog-lead p {
   margin-top: 2px;
   color: rgba(255, 246, 239, 0.4);
-  font-size: 12px;
 }
 
 .upper {
