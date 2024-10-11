@@ -1,5 +1,5 @@
 html {
-  font-family: "Herbik Regular", serif;
+  font-family: "Herbik Regular", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", Times, serif;
   background: rgb(0, 1, 2);
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -73,14 +73,14 @@ p, li {
   color: inherit;
 }
 
-.blog-lead {
-  margin-bottom: 48px;
-}
-
-.blog-lead img {
+.blog-header img {
   width: 80px;
   filter: grayscale(100%);
   border-radius: 100%;
+}
+
+.blog-lead {
+  margin-bottom: 48px;
 }
 
 .blog-lead p {
@@ -89,7 +89,7 @@ p, li {
 }
 
 .upper {
-  font-family: "JetBrains Mono Regular", monospace;
+  font-family: "JetBrains Mono Regular", "SFMono-Regular", Menlo, Monaco, "Courier New", Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
