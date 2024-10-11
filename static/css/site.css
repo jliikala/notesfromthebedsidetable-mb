@@ -1,0 +1,16 @@
+html {
+  font-family: "Herbik Regular", serif;
+  background: rgb(0, 1, 2);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.09rem;
+  width: 650px;
+  padding: 24px;
+  margin: 0 auto;
+}

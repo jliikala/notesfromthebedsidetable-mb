@@ -1,0 +1,40 @@
+{{ $slug := .File.BaseFileName }} <!-- Post slug -->
+{{ $cover := index site.Data.somemeta $slug }} <!-- Social media share image based on slug -->
+
+{{ with .Title }}
+<meta name="twitter:title" content="{{ . }}">
+<meta property="og:title" content="{{ . }}">
+{{ else }}
+<meta name="twitter:title" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ .Site.Title }}">
+{{ end }}
+
+{{ if .IsHome }}
+<meta name="twitter:description" content="{{ .Site.Params.itunes_description | default .Site.Params.description | truncate 60 }}">
+<meta name="og:description" content="{{ .Site.Params.itunes_description | default .Site.Params.description | truncate 60 }}">
+<meta name="description" content="{{ .Site.Params.itunes_description | default .Site.Params.description }}">
+<meta name="twitter:image" content="{{ "cover.jpg" | absURL }}">
+<meta property="og:image" content="{{ "cover.jpg" | absURL }}">
+{{ else }}
+<meta name="twitter:description" content="{{ .Summary | truncate 60 }}">
+<meta name="og:description" content="{{ .Summary | truncate 60 }}">
+<meta name="description" content="{{ .Summary }}">
+{{ end }}
+
+{{ if $cover }}
+<!-- If the cover exists for this page, use it -->
+<meta name="twitter:image" content="{{ $cover.image }}">
+<meta property="og:image" content="{{ $cover.image }}">
+{{ else }}
+  <!-- Fallback to a default image if no cover is found for the current slug -->
+  <meta name="twitter:image" content="{{ "cover.jpg" | absURL }}">
+  <meta property="og:image" content="{{ "cover.jpg" | absURL }}">
+{{ end }}
+
+{{ with .Params.photos }}
+  {{ if gt (len .) 0 }}
+    {{ $firstPhoto := index (first 1 .) 0 }}
+    <meta name="twitter:image" content="{{ $firstPhoto }}">
+    <meta property="og:image" content="{{ $firstPhoto }}">
+  {{ end }}
+{{ end }}

@@ -1,0 +1,27 @@
+{{ define "main" }}
+<ul class="posts h-feed">
+
+{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "paginate" | default 10) }}
+{{ range $paginator.Pages  }}
+
+  <li class="post h-entry">
+	{{ if .Title }}
+		<a class="page-title p-name" href="{{ .Permalink }}">{{ .Title }}</a><
+  {{ else}}
+    <a href="{{ .Permalink }}" class="post-date u-url">
+      <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date | time.Format "2.1.2006" }}</time>
+    </a>
+	{{ end }}
+  {{ if .Params.categories }}
+    <div class="post-categories">
+      {{ range .Params.categories }}
+        <a href="{{ "categories" | relURL }}{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+  </li>
+
+{{ end }}
+
+</ul>
+{{ end }}

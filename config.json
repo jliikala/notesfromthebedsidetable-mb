@@ -1,0 +1,9 @@
+{
+  "params": {
+    "blogTitle": "Notes from the bedside table",
+    "blogSubtitle": "The thoughts usually come at night.",
+    "languageCode": "en-EN",
+    "defaultContentLanguage": "en"
+  },
+  "paginate": 10
+}

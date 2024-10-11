@@ -1,0 +1,11 @@
+# Social media preview images for posts.
+# Enter the post slug and the url of the preview image and it works.
+
+post-slug-1:
+  image: "/images/covers/cover1.jpg"
+
+post-slug-2:
+  image: "/images/covers/cover2.jpg"
+
+post-slug-3:
+  image: "/images/covers/cover3.jpg"
