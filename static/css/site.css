@@ -20,7 +20,7 @@ p, li {
   line-height: 140%;
 }
 
-h1 {
+.blog-title {
   font-size: 20px;
   margin-bottom: 6px;
 }
