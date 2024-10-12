@@ -121,6 +121,10 @@ section, .section {
   font-size: 12px;
 }
 
+h2.upper {
+  margin: 0;
+}
+
 ul.posts a {
   text-decoration: none;
 }
