@@ -130,11 +130,16 @@ ul.subscribe-options {
   gap: 5px;
 }
 
-textarea {
+textarea, input[type="email"] {
   padding: 10px;
   font-size: 1em;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+input[type="email"] {
+  width: 60%;
+  max-width: 300px;
 }
 
 input[type="submit"] {
