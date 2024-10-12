@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Herbik';
+  font-family: 'Herbik Regular';
   src: url('../fonts/HerbikUnlicensedTrial-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -71,6 +71,7 @@ ul, ol {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 section {
@@ -120,6 +121,10 @@ section {
 }
 
 ul.posts a {
-  color: inherit;
   text-decoration: none;
+}
+
+ul.subscribe-options {
+  display: flex;
+  gap: 5px;
 }
