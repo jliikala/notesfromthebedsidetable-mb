@@ -108,7 +108,7 @@ section, .section {
   margin-top: 2px;
 }
 
-.upper, .dt-published, .replies {
+.upper, .dt-published, .replies, .post-categories::after {
   font-family: "JetBrains Mono Regular", "SFMono-Regular", Menlo, Monaco, "Courier New", Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 500;
