@@ -108,7 +108,7 @@ section, .section {
   margin-top: 2px;
 }
 
-.upper, .dt-published {
+.upper, .dt-published, .replies {
   font-family: "JetBrains Mono Regular", "SFMono-Regular", Menlo, Monaco, "Courier New", Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -170,4 +170,15 @@ input[type="submit"] {
 
 .microblog_avatar {
   border-radius: 100%;
+}
+
+.post-categories::after {
+  content: "|";
+  padding-left: 5px;
+}
+
+.post-listing-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
