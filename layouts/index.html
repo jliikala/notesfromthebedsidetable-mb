@@ -14,6 +14,7 @@
         <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date | time.Format "2.1.2006" }}</time>
       </a>
     {{ end }}
+    <div class="post-meta">
     {{ if .Params.categories }}
       <div class="post-categories">
         {{ range .Params.categories }}
@@ -21,6 +22,8 @@
         {{ end }}
       </div>
     {{ end }}
+    {{ partial "replycount.html" . }}
+    </div>
     </li>
 
   {{ end }}
